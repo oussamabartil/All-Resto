@@ -21,13 +21,19 @@ questions de clarification et relit la commande avant de l'envoyer.
 ## Structure
 
 ```
-app/            Code Python
-  menu.py       Schéma du menu + chargement
-  order.py      Schéma d'une commande structurée + validation contre le menu
+app/
+  menu.py          Schéma du menu + chargement
+  order.py         Commande structurée + validation contre le menu
+  messages.py      Textes par langue, questions de clarification, récapitulatif, prix
+  llm.py           Extraction structurée avec Claude (Haiku 5.5, Sonnet 5.5 en renfort)
+  conversation.py  Déroulé d'un appel : commande -> allergies -> relecture -> confirmation
+  cli.py           Démo en terminal
 data/
-  menu.json     Menu (identifiants stables, traductions par langue)
-prompts/fr/     Textes destinés aux appelants (un dossier par langue)
-tests/          Tests unitaires (pytest)
+  menu.json        Menu (identifiants stables, traductions par langue)
+prompts/
+  fr/              Textes destinés aux appelants (un dossier par langue)
+  llm/             Instructions données à Claude
+tests/             Tests unitaires (pytest, Claude simulé)
 ```
 
 ## Installation
@@ -44,6 +50,17 @@ Pour la v0 (validation du menu uniquement), seuls `pydantic`, `python-dotenv` et
 ```bash
 pip install pydantic python-dotenv pytest
 ```
+
+## Démo en terminal
+
+Simule un appel au clavier. Nécessite `ANTHROPIC_API_KEY` dans `.env`.
+
+```bash
+.venv/bin/python -m app.cli
+```
+
+Exemple : « deux burgers bacon large dont un sans oignons et un coca », puis répondre aux questions.
+À la fin, le ticket cuisine (lignes, total en centimes, note allergies) s'affiche en JSON.
 
 ## Tests
 
