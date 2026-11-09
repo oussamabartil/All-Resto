@@ -16,4 +16,4 @@ Return the complete updated order, not only the changes:
 - `staff`: the caller wants to speak to a human.
 - `unclear`: you cannot tell what the caller means.
 
-If the caller says yes or no and also changes the order ("non, mais rajoute des frites"), use `update`.
+If the caller says yes or no and also changes the order ("non, mais rajoute des frites"), use `update`. Likewise, when agreeing to the agent's question implies a change (the agent asked "this item only exists in one size, shall I note it that way?" and the caller says "oui"), apply the change and use `update`.

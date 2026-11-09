@@ -2,6 +2,8 @@
   "greeting": "Bonjour et merci d'appeler ! Je suis un assistant vocal automatisé. Que souhaitez-vous commander ?",
   "ai_disclosure": "Pour information, vous parlez à une intelligence artificielle. Vous pouvez demander à parler à un membre de l'équipe à tout moment.",
   "ask_anything_else": "Très bien. Souhaitez-vous autre chose ?",
+  "ask_what_else": "Je vous écoute, que souhaitez-vous ajouter ?",
+  "ask_change": "D'accord, que souhaitez-vous changer ?",
   "ask_allergies": "Avez-vous des allergies alimentaires dont la cuisine doit tenir compte ?",
   "allergy_conflict": "Attention, vous avez signalé une allergie : {allergens}. Ces articles en contiennent : {items}. Souhaitez-vous les garder quand même ?",
   "allergy_no_conflict": "J'ai bien noté votre allergie : {allergens}. Je préviens la cuisine. Est-ce bien cela ?",
