@@ -1,0 +1,7 @@
+{
+  "greeting": "Bonjour et merci d'appeler ! Je suis un assistant vocal automatisé. Que souhaitez-vous commander ?",
+  "ai_disclosure": "Pour information, vous parlez à une intelligence artificielle. Vous pouvez demander à parler à un membre de l'équipe à tout moment.",
+  "allergy_confirmation": "Vous avez signalé une allergie : {allergens}. Les articles suivants en contiennent : {items}. Souhaitez-vous les garder ou les modifier ?",
+  "order_readback": "Je récapitule votre commande : {summary}. Est-ce correct ?",
+  "order_confirmed": "Parfait, votre commande est transmise en cuisine. Merci et à bientôt !"
+}
