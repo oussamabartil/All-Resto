@@ -1,8 +1,10 @@
-# Assistant de prise de commande téléphonique
+# Allô Resto
 
-Agent vocal qui prend les commandes par téléphone pour un restaurant (français d'abord, multilingue ensuite).
-Il comprend la commande, la confronte au menu, pose les questions de clarification, relit la commande
-puis l'envoie en cuisine.
+L'assistant vocal qui prend les commandes téléphoniques de votre restaurant, les vérifie avec le menu
+et les envoie en cuisine.
+
+Français d'abord, multilingue ensuite. L'agent comprend la commande, la confronte au menu, pose les
+questions de clarification et relit la commande avant de l'envoyer.
 
 ## Pile technique
 
