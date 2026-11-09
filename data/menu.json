@@ -1,0 +1,136 @@
+{
+  "allergens": {
+    "gluten": { "names": { "fr": "gluten" } },
+    "lait": { "names": { "fr": "lait" } },
+    "oeufs": { "names": { "fr": "œufs" } },
+    "moutarde": { "names": { "fr": "moutarde" } },
+    "sesame": { "names": { "fr": "sésame" } },
+    "soja": { "names": { "fr": "soja" } },
+    "poisson": { "names": { "fr": "poisson" } },
+    "fruits_a_coque": { "names": { "fr": "fruits à coque" } }
+  },
+
+  "modifiers": {
+    "sans_oignons": { "names": { "fr": "sans oignons" } },
+    "sans_cornichons": { "names": { "fr": "sans cornichons" } },
+    "sans_fromage": { "names": { "fr": "sans fromage" } },
+    "sans_croutons": { "names": { "fr": "sans croûtons" } },
+    "sans_glacons": { "names": { "fr": "sans glaçons" } },
+    "supplement_fromage": { "names": { "fr": "supplément fromage" }, "price_delta": 100, "allergens": ["lait"] },
+    "supplement_bacon": { "names": { "fr": "supplément bacon" }, "price_delta": 150 },
+    "supplement_champignons": { "names": { "fr": "supplément champignons" }, "price_delta": 100, "available": false },
+    "sauce_ketchup": { "names": { "fr": "sauce ketchup" } },
+    "sauce_mayonnaise": { "names": { "fr": "sauce mayonnaise" }, "allergens": ["oeufs", "moutarde"] }
+  },
+
+  "items": [
+    {
+      "id": "burger_classique",
+      "category": "burgers",
+      "names": { "fr": "Burger classique" },
+      "descriptions": { "fr": "Steak haché, cheddar, salade, tomate, oignons, cornichons" },
+      "sizes": {
+        "normal": { "names": { "fr": "normal" }, "price": 950 },
+        "large": { "names": { "fr": "large" }, "price": 1250 }
+      },
+      "modifiers": ["sans_oignons", "sans_cornichons", "sans_fromage", "supplement_fromage", "supplement_bacon"],
+      "allergens": ["gluten", "lait", "sesame", "moutarde"]
+    },
+    {
+      "id": "burger_bacon",
+      "category": "burgers",
+      "names": { "fr": "Burger bacon" },
+      "descriptions": { "fr": "Steak haché, bacon grillé, cheddar, oignons, sauce barbecue" },
+      "sizes": {
+        "normal": { "names": { "fr": "normal" }, "price": 1100 },
+        "large": { "names": { "fr": "large" }, "price": 1400 }
+      },
+      "modifiers": ["sans_oignons", "sans_fromage", "supplement_fromage", "supplement_bacon"],
+      "allergens": ["gluten", "lait", "sesame", "moutarde"]
+    },
+    {
+      "id": "burger_vegetarien",
+      "category": "burgers",
+      "names": { "fr": "Burger végétarien" },
+      "descriptions": { "fr": "Galette de légumes, chèvre, roquette, oignons rouges" },
+      "sizes": {
+        "normal": { "names": { "fr": "normal" }, "price": 1050 },
+        "large": { "names": { "fr": "large" }, "price": 1350 }
+      },
+      "modifiers": ["sans_oignons", "sans_fromage", "supplement_fromage", "supplement_champignons"],
+      "allergens": ["gluten", "lait", "soja", "sesame"]
+    },
+    {
+      "id": "pizza_margherita",
+      "category": "pizzas",
+      "names": { "fr": "Pizza Margherita" },
+      "descriptions": { "fr": "Sauce tomate, mozzarella, basilic" },
+      "sizes": {
+        "moyenne": { "names": { "fr": "moyenne" }, "price": 1000 },
+        "grande": { "names": { "fr": "grande" }, "price": 1400 }
+      },
+      "modifiers": ["supplement_fromage", "supplement_champignons"],
+      "allergens": ["gluten", "lait"]
+    },
+    {
+      "id": "pizza_reine",
+      "category": "pizzas",
+      "names": { "fr": "Pizza Reine" },
+      "descriptions": { "fr": "Sauce tomate, mozzarella, jambon, champignons" },
+      "sizes": {
+        "moyenne": { "names": { "fr": "moyenne" }, "price": 1200 },
+        "grande": { "names": { "fr": "grande" }, "price": 1600 }
+      },
+      "modifiers": ["supplement_fromage"],
+      "allergens": ["gluten", "lait"],
+      "available": false
+    },
+    {
+      "id": "salade_cesar",
+      "category": "salades",
+      "names": { "fr": "Salade César" },
+      "descriptions": { "fr": "Romaine, poulet grillé, parmesan, croûtons, sauce César" },
+      "price": 1150,
+      "modifiers": ["sans_croutons", "sans_fromage"],
+      "allergens": ["gluten", "lait", "oeufs", "poisson", "moutarde"]
+    },
+    {
+      "id": "frites",
+      "category": "accompagnements",
+      "names": { "fr": "Frites" },
+      "sizes": {
+        "petite": { "names": { "fr": "petite" }, "price": 300 },
+        "grande": { "names": { "fr": "grande" }, "price": 450 }
+      },
+      "modifiers": ["sauce_ketchup", "sauce_mayonnaise"],
+      "allergens": []
+    },
+    {
+      "id": "coca_cola",
+      "category": "boissons",
+      "names": { "fr": "Coca-Cola" },
+      "sizes": {
+        "33cl": { "names": { "fr": "33 centilitres" }, "price": 300 },
+        "50cl": { "names": { "fr": "50 centilitres" }, "price": 400 }
+      },
+      "modifiers": ["sans_glacons"],
+      "allergens": []
+    },
+    {
+      "id": "eau_minerale",
+      "category": "boissons",
+      "names": { "fr": "Eau minérale" },
+      "descriptions": { "fr": "Bouteille 50 cl" },
+      "price": 200,
+      "allergens": []
+    },
+    {
+      "id": "brownie",
+      "category": "desserts",
+      "names": { "fr": "Brownie aux noix" },
+      "descriptions": { "fr": "Brownie au chocolat noir et noix de pécan" },
+      "price": 450,
+      "allergens": ["gluten", "lait", "oeufs", "fruits_a_coque", "soja"]
+    }
+  ]
+}
