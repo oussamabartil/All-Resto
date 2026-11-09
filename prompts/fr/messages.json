@@ -1,7 +1,38 @@
 {
   "greeting": "Bonjour et merci d'appeler ! Je suis un assistant vocal automatisé. Que souhaitez-vous commander ?",
   "ai_disclosure": "Pour information, vous parlez à une intelligence artificielle. Vous pouvez demander à parler à un membre de l'équipe à tout moment.",
-  "allergy_confirmation": "Vous avez signalé une allergie : {allergens}. Les articles suivants en contiennent : {items}. Souhaitez-vous les garder ou les modifier ?",
-  "order_readback": "Je récapitule votre commande : {summary}. Est-ce correct ?",
-  "order_confirmed": "Parfait, votre commande est transmise en cuisine. Merci et à bientôt !"
+  "ask_anything_else": "Très bien. Souhaitez-vous autre chose ?",
+  "ask_allergies": "Avez-vous des allergies alimentaires dont la cuisine doit tenir compte ?",
+  "allergy_conflict": "Attention, vous avez signalé une allergie : {allergens}. Ces articles en contiennent : {items}. Souhaitez-vous les garder quand même ?",
+  "allergy_no_conflict": "J'ai bien noté votre allergie : {allergens}. Je préviens la cuisine. Est-ce bien cela ?",
+  "order_readback": "Je récapitule votre commande : {summary}. Le total est de {total}. Est-ce correct ?",
+  "order_confirmed": "Parfait, votre commande est transmise en cuisine. Merci et à bientôt !",
+  "order_cancelled": "D'accord, la commande est annulée. N'hésitez pas à rappeler. Au revoir !",
+  "not_understood": "Pardon, je n'ai pas bien compris. Pouvez-vous répéter ?",
+  "transfer_to_staff": "Je vous mets en relation avec un membre de l'équipe, merci de patienter.",
+
+  "errors": {
+    "invalid_format": "Pardon, je n'ai pas bien compris. Pouvez-vous répéter votre commande ?",
+    "empty_order": "Que souhaitez-vous commander ?",
+    "unknown_item": "Je ne trouve pas « {value} » dans notre menu. Pouvez-vous préciser ?",
+    "item_unavailable": "Désolé, {item} n'est pas disponible aujourd'hui. Souhaitez-vous autre chose ?",
+    "size_required": "Quelle taille souhaitez-vous pour {item} : {options} ?",
+    "unknown_size": "Pour {item}, nous avons les tailles suivantes : {options}. Laquelle souhaitez-vous ?",
+    "size_not_applicable": "{item} n'existe qu'en une seule taille. Je le note ainsi ?",
+    "modifier_not_allowed": "Désolé, cette option n'est pas possible pour {item}. Les options disponibles sont : {options}.",
+    "modifier_unavailable": "Désolé, l'option {modifier} n'est pas disponible aujourd'hui pour {item}.",
+    "duplicate_modifier": "J'ai noté {modifier} deux fois pour {item}. Je le compte une seule fois ?",
+    "invalid_quantity": "Combien de {item} souhaitez-vous ?",
+    "unknown_allergen": "Pouvez-vous me préciser votre allergie ?"
+  },
+
+  "format": {
+    "list_separator": ", ",
+    "list_last_separator": " et ",
+    "no_options": "aucune",
+    "line": "{quantity} {item}",
+    "line_size": "{quantity} {item} {size}",
+    "line_modifiers": "{line} ({modifiers})",
+    "price": "{euros},{cents:02d} euros"
+  }
 }
