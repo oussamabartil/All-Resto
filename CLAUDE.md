@@ -11,3 +11,4 @@
 - Les textes destinés aux appelants sont dans `prompts/<langue>/`, jamais dans le code.
 - Le LLM ne produit jamais de texte libre pour la commande : uniquement des données structurées référençant les identifiants du menu (`data/menu.json`).
 - Une allergie déclarée déclenche toujours une confirmation et une note pour le personnel.
+- Ne jamais ajouter de ligne `Co-Authored-By` (ni aucune autre attribution) dans les messages de commit.
